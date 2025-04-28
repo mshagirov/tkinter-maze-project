@@ -22,11 +22,6 @@ def main():
                 win=win,
                 seed=rng_seed,verbose=True)
 
-    print('left', maze._cells[5][0].has_left_wall)
-    print('right', maze._cells[5][0].has_right_wall)
-    print('top', maze._cells[5][0].has_top_wall)
-    print('bottom', maze._cells[5][0].has_bottom_wall)
-
     print("Solving the maze ...")
     result = maze.solve()
     print(f'Maze is solved : {result}')
