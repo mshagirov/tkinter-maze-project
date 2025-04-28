@@ -10,3 +10,9 @@ Requires *matching* versions of `python` and `python-tk`. Test your installation
 python3 -m tkinter
 ```
 
+## Running the Maze Solver
+
+```bash
+python3 src/main.py
+# or use python 
+```
