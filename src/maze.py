@@ -79,7 +79,7 @@ class Maze:
         for i in range(len(self._cells)):
             for j in range(len(self._cells[0])):
                 self._cells[i][j].visited = False
-                self._draw_cell(i,j, animate=False)
+                # self._draw_cell(i,j, animate=False)
 
     def _get_neighbours(self, i, j):
         return {
@@ -120,6 +120,7 @@ class Maze:
                 self._cells[next_i][next_j].has_top_wall = False
                 self._break_walls_r(next_i, next_j)
         self._break_walls_r(next_i, next_j)
+        self._draw_cell(i,j)
 
     def _break_entrance_and_exit(self):
         self._cells[0][0].has_top_wall = False
